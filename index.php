@@ -8,7 +8,7 @@
 
   <link rel="icon" href="images\simple_logo.png">
   <link rel="stylesheet" href="css\reset.css">
-  <link rel="stylesheet" href="css\styles2.css">
+  <link rel="stylesheet" href="css\styles.css">
 </head>
 
 <body>
@@ -65,7 +65,7 @@
         <h1> Bem vindo a Urban Design! </h1>
 
         <p>
-          Especialistas em arquitetura e urbanismo, oferecemos consultoria premium na execução de obras, com foco em qualidade e inovação, transformamos ideias em realidade. 
+          Especialistas em arquitetura e urbanismo, oferecemos consultoria premium na execução de obras, com foco em qualidade e inovação, transformamos ideias em realidade.
           Desde projetos residenciais até empreendimentos urbanos, nossa equipe comprometida garante resultados excepcionais. Confie na Urban Design para a realização de seus sonhos.
         </p>
 
