@@ -253,3 +253,24 @@
     border-radius: 0;
   }
 }
+
+@media (max-height: 790px){
+  .CardText {
+    justify-content: center;
+    height: 10%;
+  }
+
+  .CardText p {
+    display: none;
+  }
+
+  .CardText h1 {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+
+  .Carosel{
+    height: 90%;
+  }
+
+}
