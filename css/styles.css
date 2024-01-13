@@ -10,7 +10,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 50px;
+  height: 10vh;
+  max-height: 50px;
   width: 100%;
 }
 
@@ -19,33 +20,37 @@
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
-  height: 50px;
+  height: 100%;
+  max-width: 10%;
   padding: 0 20px 0 10px;
   border-radius: 0 0 20px 0;
 }
 
 .SmallLogo img {
-  height: 40px;
-  width: 40px;
+  height: 80%;
   filter: invert(1);
 }
 
 .Menu {
   display: flex;
-  gap: 20px;
+  gap: 5px;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 100%;
+  max-width: 90%;
 }
 
 .Button {
   text-decoration: none;
   color: #ffffff;
   font-family: 'Varela Round', sans-serif;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 15px 10px 15px;
+  height: 9.5vh;
+  max-height: 35px;
+  padding: 0 10px 0 10px;
   border-radius: 10px;
   box-shadow: inset 0px 0px 0px 2px #ffffff;
   background-color: rgba(0, 0, 0, 0.5);
@@ -55,21 +60,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  height: 50px;
+  gap: 10px;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 0 0 0 20px;
-  padding: 0 15px 0 30px;
+  padding: 0 10px 0 15px;
 }
 
 .Icon {
   color: #ffffff;
-  height: 35px;
-  width: 35px;
-  margin: 20px;
+  height: 8vh;
+  max-height: 30px;
+  width: 8vh;
+  max-width: 30px;
 }
 
-#Start {  
+#Start {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,45 +92,45 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 65vh;
-  padding-top: 50px;
+  height: 55vh;
+  padding-top: 10vh;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .Logo img {
   max-width: 90%;
+  max-height: 90%;
   filter: invert(1);
 }
 
-
 #StartVideo {
   position: absolute;
-  width: 100%;
-  top: -24vh;
-  object-fit: cover;
+  min-width: 100%;
+  min-height: 200%;
   z-index: -1;
 }
-
 
 .Text {
   font-family: 'Varela Round', sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #bbbbbb;
-  height: 30vh;
+  min-height: 40vh;
   width: 100%;
-  padding: 15px 15vw 15px 15vw;
+}
+
+.Text p {
+  margin: 0 5% 15px 5%;
 }
 
 .Text h1 {
-  margin: 0 0 15px 0;
-  font-size: 2rem;
+  padding: 15px;
+  font-size: 1.4rem;
 }
 
 #Services {
@@ -141,7 +147,8 @@
   box-sizing: border-box;
   flex-shrink: 1;
   width: 100%;
-  height: 55px;
+  height: 10vh;
+  max-height: 55px;
   background-color: #000000;
 }
 
@@ -151,7 +158,7 @@
   justify-content: space-around;
   background-color: #148072;
   width: 100%;
-  height: 10svh;
+  height: 10vh;
 }
 
 .Galery {
@@ -173,7 +180,7 @@
 
 .CardText {
   font-family: 'Varela Round', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-align: center;
   box-sizing: border-box;
   display: flex;
@@ -181,13 +188,13 @@
   gap: 20px;
   align-items: center;
   background-color: #bbbbbb;
-  height: 20%;
+  height: 25%;
   width: 100vw;
-  padding: 15px 15vw 15px 15vw;
+  padding: 15px 5% 15px 5%;
 }
 
 .CardText h1 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 .Carosel {
@@ -197,7 +204,7 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  height: 80%;
+  height: 75%;
   width: 100vw;
   background-color: #000000;
   padding-right: 20px;
@@ -212,10 +219,37 @@
 }
 
 .Img img {
-  height: 45vh;
+  max-height: 60vh;
+  max-width: 100vw;
   border-radius: 20px;
 }
 
 .Img img:hover {
   opacity: 0.5;
+}
+
+@media (max-width: 614px) {
+  .CardText {
+    font-size: 1rem;
+    height: 40%;
+  }
+
+  .CardText h1 {
+    font-size: 1.2rem;
+  }
+
+  .Carosel {
+    height: 60%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .Img {
+    padding: 0;
+  }
+
+  .Img img {
+    width: 100vw;
+    border-radius: 0;
+  }
 }
